@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Template</title>
+    <style>
+        :root {
+            --small: 14px;
+            --smaller: 12px;
+        }
+
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            font-family: 'Oswald', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            padding: 1em 1.5em;
+            background: rgb(222, 255, 211);
+            background: linear-gradient(90deg, rgba(222, 255, 211, 1) 0%, rgba(237, 255, 230, 1) 25%, rgba(249, 255, 247, 1) 50%, rgba(237, 255, 230, 1) 75%, rgba(222, 255, 211, 1) 100%);
+        }
+
+        .title {
+            margin-block: 0.3em;
+            font-weight: 500;
+        }
+
+        .title::before {
+            content: ' < '
+        }
+
+        .title::after {
+            content: ' /> '
+        }
+
+        .sub-title {
+            font-size: 18px;
+            margin-block: 0.8em;
+        }
+
+        .bio {
+            /* font-size: var(--small); */
+            line-height: 2.2;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .left {
+            flex: 5;
+            padding: 0 1em;
+        }
+
+        .right {
+            flex: 2;
+            background: #33d3d0a8;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .caps {
+            text-transform: uppercase;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .thin {
+            font-weight: 200;
+        }
+
+        .s-font {
+            font-size: var(--small);
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .inline {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <h1 class="title">Ron Strauss</h1>
+            <h5 class="sub-title">Full Stack Developer</h5>
+            <p class="bio">
+                Experienced Developer adept in all stages of web development.<br>
+                Proficient in an assortment of technologies, including Angular, Typescript, Node.js, Express, and
+                SQL/NoSQL.<br>
+                Able to shift between frontend and backend development, as needed, <br>
+                And to effectively self-manage during independent projects, as well as collaborate
+                in a team setting.<br>
+                A fast, curious, and thorough learner, with a passion for problem-solving and delivering high quality,
+                efficient, and well thought-out solutions.
+            </p>
+            <h4 class="caps">Relevant Work Experience</h4>
+            <hr>
+            <div>
+                <h5 class="capitalize inline">Moblity Software Solutions Ltd.</h5> <span class="s-font">Petah
+                    Tikva</span>
+            </div>
+            <div class="italic thin">Software Company</div>
+            <div class="capitalize flex justify-between">
+                <span>fullstack developer</span>
+                <span>2022 - Present</span>
+            </div>
+            <div class="">
+                <span> Single lead responsibility for development, with a focus on Angular.</span>
+            </div>
+            <ul>
+                <li>
+                    Completely overhauled the company's Angular app and modernized the codebase - This included
+                    implementing a new design system, refactoring the code to be more modular and maintainable, added
+                    PWA capabilities, and set up a CI/CD workflow that utilizes Github Actions and Cloudflare
+                    Workers.
+                </li>
+                <li>
+                    Day to day included translating business needs into working, responsive, and styled components, and
+                    managing the
+                    regular workload, of updating existing legacy code.
+                </li>
+                <li>
+                    Developed several APIs and CLI tools to automate and streamline the development process.
+                </li>
+            </ul>
+            <!-- <div>
+                <h5 style="display:inline">
+                    Frontend Developer , Freelancer</h5>
+            </div>
+            <div class="capitalize flex justify-between">
+                <span>fullstack developer</span>
+                <span>
+                    April, 2022 - Present</span>
+            </div>
+            <ul>
+                <li> Successfully identified, diagnosed, and fixed website problems, including broken links,
+                    typographical errors, and formatting issues.</li>
+                <li> Remained knowledgeable in new standards, technologies, and trends in website development.</li>
+
+            </ul>
+            Working on numerous projects, and contributing to open source repos on Github. -->
+            <hr>
+            <h3 class="caps">Courses</h3>
+            <ul>
+
+                <li>
+                    <h4 class="capitalize inline"> Full Stack Web Development, Honor Student
+                    </h4> <span class="s-font">John Bryce Tel-Aviv, 2021 - 2022</span>
+                </li>
+                <li>
+                    <h4 class="capitalize inline"> CS50x Online Course </h4> <span class="s-font">MIT EdX 2023</span>
+                </li>
+                <li>
+                    <h4 class="capitalize inline"> web development courses</h4> <span class="s-font">Udemy</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Full Stack Web Development, John Bryce Tel-Aviv, Honor Student
+            M AY 2 0 2 1 — J A N U A R Y 2 0 2 2 -->
+    </div>
+    <div class="right">
+
+    </div>
+    </div>
+</body>
+
+</html>
