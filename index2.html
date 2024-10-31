@@ -45,7 +45,7 @@
             flex-direction: column;
             width: 100%;
             min-height: 100vh;
-            padding: 1em 2em;
+            padding: 0 2em 1em 2em;
             border: 30px solid color-mix(in srgb, var(--main-color) 100%, black 10%);
             /* background: rgb(222, 255, 211);
             background: linear-gradient(90deg, rgba(222, 255, 211, 1) 0%, rgba(237, 255, 230, 1) 25%, rgba(249, 255, 247, 1) 50%, rgba(237, 255, 230, 1) 75%, rgba(222, 255, 211, 1) 100%); */
@@ -66,13 +66,25 @@
             }
         }
 
+        p,
+        li {
+            font-size: 15px;
+        }
+
         .sub-title {
             font-size: 18px;
             margin-block: 0.8em;
         }
 
+        a {
+            display: block;
+            margin-block: 6px;
+            color: color-mix(in lab, rgb(0, 0, 238), var(--main-color) 44%)
+        }
+
         .bio {
-            line-height: 1.6;
+            line-height: 1.4;
+            margin-top: 8px;
         }
 
         .flex {
@@ -157,7 +169,18 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+        }
+
+        .bottom-left {
             gap: 1em;
+        }
+
+        .bottom-right {
+            gap: 0.8em;
+        }
+
+        .experience-ul {
+            padding-inline-start: 30px;
         }
 
         ul.no-pad {
@@ -171,7 +194,7 @@
 
         .separator {
             width: 80%;
-            height: 10px;
+            height: 6px;
             border-radius: 0 0 6px 6px;
             background: var(--main-color);
             margin: 10px auto;
@@ -205,16 +228,16 @@
                 </div>
                 <div class="full-length-bar full-length-bar-horizontal"></div>
                 <div class="bottom-left-middle">
-                    <div class="font-bold italic">Experience</div>
+                    <div class="font-bold italic" style="padding-top:1em;">Experience</div>
                     <div class="bottom-left-middle-block">
-                        <h4 class="font-bold" style="margin-bottom: 6px; margin-top:14px">Full Stack Developer</h4>
+                        <h4 class="font-bold" style="margin-bottom: 6px; margin-top:8px">Full Stack Developer</h4>
                         <div>
                             <p style="margin:4px 0">Moblity Software Solutions Ltd. | Petah Tikva | 2022 - Present</p>
                         </div>
                         <div>
                             <span> Single lead responsibility for development, with a focus on Angular.</span>
                         </div>
-                        <ul>
+                        <ul class="experience-ul">
                             <li>
                                 Completely overhauled the company's Angular app and modernized the codebase - This
                                 included
@@ -245,7 +268,7 @@
                         <div>
                             <span> Working on numerous projects, and contributing to open source repos on Github.</span>
                         </div>
-                        <ul>
+                        <ul class="experience-ul">
                             <li> Successfully identified, diagnosed, and fixed website problems, including broken links,
                                 typographical errors, and formatting issues.
                             </li>
@@ -264,75 +287,47 @@
             <div class="bottom-right">
                 <div class="bottom-right-box">
                     <div class="font-bold">Contact</div>
-                    <p>0528249188</p>
-                    <p>hi@ronstrauss.cc</p>
+                    <a target="_blank" href="tel:+972528249188">0528249188</a>
+                    <a target="_blank" href="https://github.com/RonStrauss">github.com/RonStrauss</a>
+                    <a target="_blank"
+                        href="https://www.linkedin.com/in/ronstrauss-webdev/">linkedin.com/in/ronstrauss-webdev</a>
+                    <a target="_blank" href="https://ronstrauss.cc">ronstrauss.cc</a>
+                    <a style="margin-bottom:4px;" href="mailto:hi@ronstrauss.cc">hi@ronstrauss.cc</a>
                 </div>
                 <div class="full-length-bar full-length-bar-horizontal"></div>
                 <div class="bottom-right-box">
-                    <div class="font-bold italic">Skills</div>
-                    <ul class="no-pad">
+                    <div class="font-bold italic" style="padding-top: 1em;">Skills</div>
+                    <ul class="no-pad" style="margin-block: 8px;">
                         <li>Angular</li>
                         <li>Typescript</li>
+                        <li>Javascript</li>
+                        <li>SCSS/LESS</li>
                         <li>Node.js</li>
                         <li>Express</li>
-                        <li>SQL/NoSQL</li>
+                        <li>SQL Server</li>
+                        <li>Git</li>
+                        <li>React</li>
+                        <li>Puppeteer</li>
+                        <li>Github Actions</li>
+                        <li>Kotlin</li>
+                        <li>Go</li>
                     </ul>
                 </div>
                 <div class="full-length-bar full-length-bar-horizontal"></div>
                 <div class="bottom-right-box">
-                    <div class="font-bold italic">Education</div>
+                    <div class="font-bold italic" style="padding-top: 1em;">Education</div>
 
                     <p class="capitalize" style="margin: 10px 0 6px"> Full Stack Web Development, Honor Student
                     </p> <span class="s-font">John Bryce Tel-Aviv, 2021 - 2022</span>
                     <div class="separator"></div>
-                    <!-- <div class="full-length-bar full-length-bar-horizontal"></div> -->
-
                     <p class="capitalize"> CS50x Online Course </p> <span class="s-font">MIT EdX 2023</span>
-
-                    <!-- <div class="full-length-bar full-length-bar-horizontal"></div> -->
-
                     <div class="separator"></div>
-                    <!-- <div class="full-length-bar full-length-bar-horizontal"></div> -->
                     <p class="capitalize"> web development courses</p> <span class="s-font">Udemy</span>
 
                 </div>
             </div>
-            <!-- <div>
-                <h5 style="display:inline">
-                    Frontend Developer , Freelancer</h5>
-            </div>
-            <div class="capitalize flex justify-between">
-                <span>fullstack developer</span>
-                <span>
-                    April, 2022 - Present</span>
-                </div>
-                <ul>
-                    <li> Successfully identified, diagnosed, and fixed website problems, including broken links,
-                        typographical errors, and formatting issues.</li>
-                        <li> Remained knowledgeable in new standards, technologies, and trends in website development.</li>
-                        
-                    </ul>
-                    Working on numerous projects, and contributing to open source repos on Github. -->
-            <!-- <hr>
-            <h3 class="caps">Courses</h3>
-            <ul>
 
-                <li>
-                    <h4 class="capitalize inline"> Full Stack Web Development, Honor Student
-                    </h4> <span cl  ass="s-font">John Bryce Tel-Aviv, 2021 - 2022</span>
-                </li>
-                <li>
-                    <h4 class="capitalize inline"> CS50x Online Course </h4> <span class="s-font">MIT EdX 2023</span>
-                </li>
-                <li>
-                    <h4 class="capitalize inline"> web development courses</h4> <span class="s-font">Udemy</span>
-                </li>
-            </ul>
-             -->
         </div>
-
-        <!-- Full Stack Web Development, John Bryce Tel-Aviv, Honor Student
-        M AY 2 0 2 1 — J A N U A R Y 2 0 2 2 -->
     </div>
     </div>
 
